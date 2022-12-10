@@ -12,7 +12,7 @@ namespace lab_final.Controllers
 {
     public class LoginController : Controller
     {
-        public SqlConnection datos = new SqlConnection("Data Source=SQL5102.site4now.net;Initial Catalog=db_a7aa70_dispositivos;User Id=db_a7aa70_dispositivos_admin;Password=Juancamiloxd12");
+        
         public IActionResult Index()
         {
             return View();
