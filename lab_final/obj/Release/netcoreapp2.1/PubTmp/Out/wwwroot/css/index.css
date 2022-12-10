@@ -1,0 +1,101 @@
+﻿.top {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px black;
+    background-color: rgb(196, 196, 196);
+    color: black;
+    border-bottom:none;
+    padding-top:1%;
+}
+
+.barritaizq {
+    position: absolute;
+    width: 20%;
+    height: 95%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px black;
+    border-top:none;
+}
+.titulo {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    top: 5%;
+    left:54%;
+}
+.muestras {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 25%;
+}
+.btex {
+    cursor:pointer;
+    padding-left:15%;
+    background-color: white;
+    color: blue;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-size: 15px;
+    border:none;
+}
+.bloquee {
+    height: 40%;
+    padding-top: 5%;
+}
+.btex.selected {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10% / 10%;
+    border: solid 1px black;
+}
+
+table, tr, td {
+    border: solid 1px black;
+}
+
+table {
+    position: absolute;
+    width: 100%;
+}
+
+td {
+    padding: 0 5px 0 5px;
+}
+
+
+
+thead > tr {
+    background-color: black;
+    color: white;
+}
+thead{
+    background-color:black;
+    color:white;
+}
+
+
+tbody > tr > td:first-child {
+    cursor: pointer;
+}
+.tablon {
+    position: absolute;
+    top: 13%;
+    width: 70%;
+    left: 26%;
+}
+.cuadro {
+    position: absolute;
+    top: 13%;
+    width: 70%;
+    left: 26%;
+}

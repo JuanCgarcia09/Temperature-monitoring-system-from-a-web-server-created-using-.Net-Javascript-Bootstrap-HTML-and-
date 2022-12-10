@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="sombra"></div>
+    <div class="container">
+        <h1>Ingreso</h1>
+        <input class="full" type="password" value="" id="contrasenaa" placeholder="Contraseña">
+        <input class="boton" onclick="onvalidar();" type="button" value="Login" id="btnLogin">
+    </div>
+    <div class="error" id="error1">
+        <h1>Error login</h1>
+        <p>El usuario y contraseña son obligatorios</p>
+        <input class="boton" onclick="elmago(1);" type="button" value="Ok" id="btnOk">
+    </div>
+
+    <div class="error" id="error2">
+        <h1>Login</h1>
+        <p>Usuario o contraseña incorrectos</p>
+        <input class="boton" onclick="elmago(3);" type="button" value="Ok" id="btnOk">
+    </div>
+
+</body>
+</html>
+<style>
+
+    .container {
+        width: 50%;
+        height: 100%;
+        border: 1px solid;
+        border-radius: 5px;
+        margin: 160px auto;
+        margin-top: 100px;
+        padding: 2% 3%;
+        background-color: white;
+        position: relative;
+        align-items: center;
+    }
+
+    .sombra {
+        width: 50%;
+        height: 37%;
+        border: 1px solid;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 1%;
+        padding: 2% 3%;
+        background-color: green;
+        position: absolute;
+        align-items: center;
+        left: 26%;
+    }
+
+    .error {
+        width: 40%;
+        height: 30%;
+        border: 1px solid;
+        border-radius: 5px;
+        margin: auto;
+        padding: 2% 3%;
+        position: absolute;
+        top: 0%;
+        margin-top: 19%;
+        left: 30%;
+        background-color: white;
+        visibility: hidden;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        color: red;
+    }
+
+    .full {
+        width: 100%;
+        border: 1px solid black;
+        margin-bottom: 15px;
+        padding: 11px 10px;
+    }
+
+    .boton {
+        width: 102%;
+    }
+</style>
+
+@section Scripts{
+    <script src="~/js/Login.js"></script>
+}

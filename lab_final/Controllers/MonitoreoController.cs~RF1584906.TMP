@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using lab_final.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace lab_final.Controllers
+{
+
+    public class MonitoreoController : ControllerBase
+    {
+        public DeviceContext hola = new DeviceContext();
+
+        public void About()
+        {
+            hola
+        }
+
+    }
+
+}
