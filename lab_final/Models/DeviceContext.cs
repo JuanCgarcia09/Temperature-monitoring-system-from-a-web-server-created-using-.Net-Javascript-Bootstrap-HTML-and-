@@ -13,8 +13,7 @@ namespace lab_final.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Data Source=SQL5102.site4now.net;Initial Catalog=db_a7aa70_dispositivos;User Id=db_a7aa70_dispositivos_admin;Password=Juancamiloxd12");
-            }
+                
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
