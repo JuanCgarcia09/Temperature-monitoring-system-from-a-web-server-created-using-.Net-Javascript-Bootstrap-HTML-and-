@@ -11,7 +11,6 @@ namespace lab_final.Controllers
 {
     public class DispoController : Controller
     {
-        public SqlConnection datos = new SqlConnection("Data Source=SQL5102.site4now.net;Initial Catalog=db_a7aa70_dispositivos;User Id=db_a7aa70_dispositivos_admin;Password=Juancamiloxd12");
         public List<Dispositivo> Dispositivos = new List<Dispositivo>();
         public IActionResult Index()
         {
